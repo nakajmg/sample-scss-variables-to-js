@@ -1,5 +1,4 @@
 const fs = require("fs");
-const util = require("util");
 const path = require("path");
 const sassExtract = require("sass-extract");
 const rgbHex = require("rgb-hex");
