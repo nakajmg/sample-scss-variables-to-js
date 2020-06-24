@@ -3,7 +3,7 @@ const util = require("util");
 const path = require("path");
 const sassExtract = require("sass-extract");
 const rgbHex = require("rgb-hex");
-const writeFile = util.promisify(fs.writeFile);
+const { writeFile } = fs.promises;
 
 const extract = () => {
   const rendered = sassExtract.renderSync(
